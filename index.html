@@ -16,10 +16,10 @@
   <body>
     <div class="content">
       <span>间隔时间: </span>
-      <input class="inp" id="inp" type="number" min="10" />
+      <input class="inp" id="inp" value="100" type="number" min="10" />
       <span class="unit">毫秒</span>
       <br />
-      <button onclick="handleStart()" class="btn">开始</button>
+      <button id="btn" class="btn">开始</button>
     </div>
 
     <div class="tip">
@@ -30,9 +30,9 @@
     </div>
 
     <div class="desc">
-      <div>1. 注意单位是毫秒</div>
+      <div>1. 注意单位是毫秒, 最小值10毫秒</div>
       <div>2. 被封不负责的哦😯</div>
     </div>
-    <script type="text/javascript" src="./renderer.js"></script>
+    <script src="./renderer.js"></script>
   </body>
 </html>

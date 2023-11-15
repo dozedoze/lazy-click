@@ -1,5 +1,6 @@
-const { contextBridge } = require("electron");
+const { contextBridge, ipcRenderer } = require("electron");
 
-contextBridge.exposeInMainWorld("versions", {
-  ping: () => ipcRenderer.invoke("ping"),
+contextBridge.exposeInMainWorld("times", {
+  setClickTime: (time) => ipcRenderer.send("my-test-start", time),
+  version: process.version,
 });

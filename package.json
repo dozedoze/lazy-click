@@ -1,19 +1,29 @@
 {
   "name": "lazy-click",
   "version": "1.0.0-rc",
-  "description": "",
+  "description": "懒人专用",
   "main": "index.js",
   "scripts": {
-    "start": "electron .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron-forge start",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rebuild": "electron-rebuild -f -w yourmodule",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
-  "author": "",
+  "author": "chendashuai",
   "license": "ISC",
   "devDependencies": {
+    "@electron-forge/cli": "^6.4.2",
+    "@electron-forge/maker-deb": "^6.4.2",
+    "@electron-forge/maker-rpm": "^6.4.2",
+    "@electron-forge/maker-squirrel": "^6.4.2",
+    "@electron-forge/maker-zip": "^6.4.2",
+    "@electron-forge/plugin-auto-unpack-natives": "^6.4.2",
     "electron": "^27.0.4"
   },
   "dependencies": {
     "electron-rebuild": "^3.2.9",
+    "electron-squirrel-startup": "^1.0.0",
     "robotjs": "^0.6.0"
   }
 }

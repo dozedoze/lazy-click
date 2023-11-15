@@ -1,14 +1,13 @@
 const inp = document.getElementById("inp");
+const btn = document.getElementById("btn");
 
-console.log("tamaiaaaaaaaaa");
-
-const handleStart = (event) => {
-  console.log(event, "veent");
+inp.onblur = (event) => {
+  const nowValue = event.target.value;
+  if (nowValue < 10) {
+    event.target.value = "10";
+  }
 };
 
-const func = async () => {
-  const response = await window.versions.ping();
-  console.log(response); // 打印 'pong'
+btn.onclick = () => {
+  window.times.setClickTime(inp.value);
 };
-
-func();
