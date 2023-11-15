@@ -10,10 +10,29 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
-    <title>连点器（v rc.1.0.0）</title>
+    <link rel="stylesheet" href="./index.css" />
+    <title>🤖戳戳（v 1.0.0-rc）</title>
   </head>
   <body>
-    <h1>这是一个连点器</h1>
+    <div class="content">
+      <span>间隔时间: </span>
+      <input class="inp" id="inp" type="number" min="10" />
+      <span class="unit">毫秒</span>
+      <br />
+      <button onclick="handleStart()" class="btn">开始</button>
+    </div>
+
+    <div class="tip">
+      <div class="tip_fir">快捷键:</div>
+      <div>mac: ⌘(command) + 1</div>
+      <div>window: ctrl + 1</div>
+      <div>退出: esc</div>
+    </div>
+
+    <div class="desc">
+      <div>1. 注意单位是毫秒</div>
+      <div>2. 被封不负责的哦😯</div>
+    </div>
+    <script type="text/javascript" src="./renderer.js"></script>
   </body>
-  <script src="./renderer.js"></script>
 </html>

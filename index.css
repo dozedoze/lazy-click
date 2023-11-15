@@ -1,0 +1,39 @@
+body {
+  font-size: 14px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+    margin-left: 10px;
+}
+
+
+.tip {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  justify-content: flex-end;
+  background-color: green;
+  color: #fff;
+  font-size: 12px;
+  padding: 4px;
+}
+
+.tip_fir {
+  font-size: 12px;
+}
+
+.unit {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.desc {
+  margin-top: 10px;
+  font-size: 10px;
+  color: red;
+}
